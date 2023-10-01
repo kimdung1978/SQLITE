@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imagedefault"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/custom_check" />
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:id="@+id/layout1"
+        android:layout_toRightOf="@+id/imagedefault"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/nhapx"
+            android:text="Nhập X"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:textSize="30sp"
+            android:textColor="#ff00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"/>
+        <TextView
+            android:id="@+id/nhapy"
+            android:layout_marginLeft="5dp"
+            android:text="Nhập Y"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nhapdiem"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@+id/imagedefault"
+        android:background="#ff00"
+        android:textColor="#ff00"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/nhapdiem"
+        android:layout_marginLeft="10dp"
+        android:text="Nhập tên điểm"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imagedefault"
+        android:layout_below="@+id/layout1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/nhapdiem"
+        android:layout_marginLeft="-80dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/imagedefault"
+        android:background="#ff00"
+        android:gravity="center"
+        android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/xoa"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="100dp"
+        android:layout_toRightOf="@+id/layout1"
+        android:background="@drawable/ic_baseline_delete_24" />
+</RelativeLayout>

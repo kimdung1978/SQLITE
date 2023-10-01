@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:orientation="vertical"
+    android:background="#0FFF07"
+    android:layout_height="350dp">
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="THÊM ĐIỂM"
+        android:textStyle="bold"
+        android:background="#00BCD4"
+        android:textSize="45sp"
+        android:textColor="#ff00"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtnhapx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tọa độ X"
+            android:textSize="30sp"/>
+        <EditText
+            android:id="@+id/edtnhapy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tọa độ Y"
+            android:textSize="30sp"/>
+        <EditText
+            android:id="@+id/edtnhapdiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập tên điểm"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/addscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD SCORE"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
